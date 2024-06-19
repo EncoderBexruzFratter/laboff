@@ -58,27 +58,68 @@ html {
 #katalog__box:hover #katalog__text__box{
     color: #197FAF;
 }
+
+
 .swiper-button-next::after{
     content: "" !important;
 }
 .swiper-button-prev::after{
     content: "" !important;
 }
+
+:root {
+    --swiper-theme-color: #197FAF;
+}
+
 .swiper-button-next{
     width: 64px !important;
     height: 64px !important;
     position: absolute !important;
+    z-index: 1 !important;
+    top: 266px !important;
+    right: -104px !important;
 }
 .swiper-button-prev{
     width: 64px !important;
     height: 64px !important;
     position: absolute !important;
+    z-index: 1 !important;
+    top: 266px !important;
+    left: -104px !important;
 }
+
+.swiper-button-disabled{
+    opacity: .35;
+    cursor: auto;
+    pointer-events: none;
+}
+
+.swiper-button-next2{
+    width: 64px !important;
+    height: 64px !important;
+    position: absolute !important;
+    z-index: 1 !important;
+    top: 266px !important;
+    right: -104px;
+}
+.swiper-button-prev2{
+    width: 64px !important;
+    height: 64px !important;
+    position: absolute !important;
+    z-index: 1 !important;
+    top: 266px !important;
+    left: -104px;
+}
+
+
+
+
 .swiper__box{
     max-width: 960px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    border: 2px solid red;
 }
 
 @media(max-width:768px){
